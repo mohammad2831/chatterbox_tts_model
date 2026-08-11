@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  tts_server:
+    build: .
+    container_name: chatterbox_tts_container
+    ports:
+      - "8000:8000"
+    environment:
+      - HF_TOKEN=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
+    volumes:
+      - ./:/app
+      - ./hf_cache:/app/hf_cache
+      - ./media/outputs:/app/media/outputs
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu, compute, utility]

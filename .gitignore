@@ -1,0 +1,29 @@
+# Python / Django
+__pycache__/
+hf_cache/
+venv/
+*.py[cod]
+*$py.class
+*.so
+venv/
+env/
+ENV/
+db.sqlite3
+media/
+staticfiles/
+
+# Environment Variables
+.env
+
+# AI Models & Checkpoints
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+models/
+checkpoints/
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store

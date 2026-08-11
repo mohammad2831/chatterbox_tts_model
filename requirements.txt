@@ -1,0 +1,30 @@
+# --- Web Framework ---
+Django==5.2.16
+djangorestframework==3.17.1
+
+# --- Core Machine Learning ---
+transformers
+diffusers
+safetensors
+einops
+huggingface_hub
+torchvision
+
+# --- LLaMA Required Dependencies ---
+sentencepiece
+protobuf
+accelerate
+
+# --- Chatterbox & TTS Specific ---
+chatterbox-tts==0.1.7
+s3tokenizer==0.3.0
+resemble-perth==1.0.1
+perth==1.0.0
+
+# --- Audio & Math Processing ---
+librosa
+soundfile
+omegaconf
+
+numpy<2.0.0
+scipy
